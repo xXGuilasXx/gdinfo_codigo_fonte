@@ -33,6 +33,9 @@ gdinfo-site/
 └── README.md           # Este arquivo
 ```
 
+### Aplicação Hospedada
+Acesse a aplicação publicada em: https://gd-info.netlify.app/
+
 ### Como Executar
 1. Clone o repositório:
    ```bash
