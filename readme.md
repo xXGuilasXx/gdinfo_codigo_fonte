@@ -36,11 +36,11 @@ gdinfo-site/
 ### Como Executar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/gdinfo-site.git
+   git clone https://github.com/xXGuilasXx/gdinfo_codigo_fonte.git
    ```
 2. Abra o arquivo `index.html` diretamente no navegador, ou utilize um servidor local:
    ```bash
-   cd gdinfo-site
+   cd gdinfo_codigo_fonte
    python3 -m http.server 8080
    ```
 3. Acesse `http://localhost:8080` no navegador.
