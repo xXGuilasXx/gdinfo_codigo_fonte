@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDINFO Eletrônicos - Sua Loja de Tecnologia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">GD<span class="logo-highlight">INFO</span></span>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SEÇÃO 1: HOME / HERO -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Tecnologia ao seu <span class="highlight">alcance</span></h1>
+            <p class="hero-subtitle">Venda de eletrônicos, acessórios e assistência técnica especializada. Qualidade e confiança para você e seu equipamento.</p>
+            <div class="hero-buttons">
+                <a href="#produtos" class="btn btn-primary">Ver Produtos</a>
+                <a href="#contato" class="btn btn-secondary">Solicitar Orçamento</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Clientes Atendidos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Produtos Disponíveis</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Anos de Experiência</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: PRODUTOS / CATÁLOGO -->
+    <section id="produtos" class="section produtos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos <span class="highlight">Produtos</span></h2>
+                <p>Confira nosso catálogo de eletrônicos e acessórios com os melhores preços da região.</p>
+            </div>
+
+            <!-- Filtros de Categoria -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="perifericos">Periféricos</button>
+                <button class="filter-btn" data-category="hardware">Hardware</button>
+                <button class="filter-btn" data-category="smartphones">Smartphones</button>
+                <button class="filter-btn" data-category="acessorios">Acessórios</button>
+            </div>
+
+            <!-- Grade de Produtos -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Periféricos -->
+                <div class="product-card" data-category="perifericos">
+                    <div class="product-badge">Novo</div>
+                    <div class="product-img">🖱️</div>
+                    <div class="product-info">
+                        <h3>Mouse Gamer RGB</h3>
+                        <p class="product-desc">Mouse óptico com 7 botões, DPI ajustável até 12.000 e iluminação RGB.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 89,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perifericos">
+                    <div class="product-img">⌨️</div>
+                    <div class="product-info">
+                        <h3>Teclado Mecânico</h3>
+                        <p class="product-desc">Teclado mecânico com switches blue, anti-ghosting e retroiluminação LED.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 199,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="perifericos">
+                    <div class="product-img">🎧</div>
+                    <div class="product-info">
+                        <h3>Headset com Microfone</h3>
+                        <p class="product-desc">Headset estéreo com microfone ajustável, almofadas confortáveis e som Hi-Fi.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 129,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware -->
+                <div class="product-card" data-category="hardware">
+                    <div class="product-badge sale">Oferta</div>
+                    <div class="product-img">💾</div>
+                    <div class="product-info">
+                        <h3>SSD 480GB SATA</h3>
+                        <p class="product-desc">SSD de alta velocidade com leitura de até 550MB/s. Ideal para upgrade de notebooks.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 189,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="hardware">
+                    <div class="product-img">🧮</div>
+                    <div class="product-info">
+                        <h3>Memória RAM 8GB DDR4</h3>
+                        <p class="product-desc">Memória RAM DDR4 2666MHz, compatível com notebooks e desktops.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 149,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="hardware">
+                    <div class="product-img">🖥️</div>
+                    <div class="product-info">
+                        <h3>Fonte 500W 80 Plus</h3>
+                        <p class="product-desc">Fonte de alimentação certificada 80 Plus Bronze, silenciosa e eficiente.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 259,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smartphones -->
+                <div class="product-card" data-category="smartphones">
+                    <div class="product-badge">Destaque</div>
+                    <div class="product-img">📱</div>
+                    <div class="product-info">
+                        <h3>Smartphone 128GB</h3>
+                        <p class="product-desc">Smartphone com tela 6.5", câmera tripla 48MP, bateria 5000mAh e 6GB RAM.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 1.299,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="smartphones">
+                    <div class="product-img">📱</div>
+                    <div class="product-info">
+                        <h3>Smartphone Básico 64GB</h3>
+                        <p class="product-desc">Smartphone com tela 6.1", câmera 13MP, 4GB RAM. Ideal para uso diário.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 699,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acessórios -->
+                <div class="product-card" data-category="acessorios">
+                    <div class="product-img">🔌</div>
+                    <div class="product-info">
+                        <h3>Carregador Turbo USB-C</h3>
+                        <p class="product-desc">Carregador rápido 33W com cabo USB-C incluso. Compatível com diversas marcas.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 59,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="acessorios">
+                    <div class="product-img">🎒</div>
+                    <div class="product-info">
+                        <h3>Mochila para Notebook 15"</h3>
+                        <p class="product-desc">Mochila acolchoada com compartimento para notebook até 15.6" e porta USB.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 119,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="acessorios">
+                    <div class="product-img">🔋</div>
+                    <div class="product-info">
+                        <h3>Power Bank 20.000mAh</h3>
+                        <p class="product-desc">Bateria portátil com 2 saídas USB e carregamento rápido. Leve e compacto.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 99,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="acessorios">
+                    <div class="product-img">🖨️</div>
+                    <div class="product-info">
+                        <h3>Cabo HDMI 2.0 - 2m</h3>
+                        <p class="product-desc">Cabo HDMI 2.0 com suporte a 4K@60Hz, blindagem tripla e conectores banhados a ouro.</p>
+                        <div class="product-footer">
+                            <span class="product-price">R$ 29,90</span>
+                            <a href="#contato" class="btn btn-sm">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: SERVIÇOS -->
+    <section id="servicos" class="section servicos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos <span class="highlight">Serviços</span></h2>
+                <p>Assistência técnica especializada para seus equipamentos eletrônicos.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Manutenção de Notebooks</h3>
+                    <p>Reparo de hardware e software, troca de tela, teclado, bateria, placa-mãe e limpeza interna completa.</p>
+                    <a href="#contato" class="service-link">Solicitar Orçamento →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Reparo de Smartphones</h3>
+                    <p>Troca de tela, bateria, conector de carga, câmera e atualização de software para todas as marcas.</p>
+                    <a href="#contato" class="service-link">Solicitar Orçamento →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🖥️</div>
+                    <h3>Montagem de PCs</h3>
+                    <p>Montagem personalizada de computadores desktop para uso profissional, gamer ou corporativo.</p>
+                    <a href="#contato" class="service-link">Solicitar Orçamento →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Upgrade de Hardware</h3>
+                    <p>Instalação de SSD, memória RAM, placa de vídeo e outros componentes para melhorar o desempenho.</p>
+                    <a href="#contato" class="service-link">Solicitar Orçamento →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Formatação e Backup</h3>
+                    <p>Formatação completa com instalação de sistema operacional, drivers e backup seguro dos seus dados.</p>
+                    <a href="#contato" class="service-link">Solicitar Orçamento →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Configuração de Redes</h3>
+                    <p>Instalação e configuração de roteadores, repetidores Wi-Fi e redes cabeadas para residências e empresas.</p>
+                    <a href="#contato" class="service-link">Solicitar Orçamento →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: SOBRE NÓS -->
+    <section id="sobre" class="section sobre-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a <span class="highlight">GDINFO</span></h2>
+                <p>Conheça nossa história e nosso compromisso com a tecnologia acessível.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa História</h3>
+                    <p>A <strong>GDINFO Eletrônicos</strong> nasceu da paixão por tecnologia e do desejo de oferecer soluções acessíveis e de qualidade para a comunidade local. Fundada como Microempreendedor Individual (MEI), a loja iniciou suas atividades com foco na venda de acessórios de informática e na prestação de serviços de assistência técnica.</p>
+                    <p>Ao longo dos anos, a GDINFO consolidou-se como referência em eletrônicos na região, ampliando seu portfólio de produtos e serviços. Hoje, atendemos desde o estudante que precisa de um periférico até a empresa que necessita de suporte técnico especializado.</p>
+
+                    <h3>Nossos Valores</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <span class="value-icon">✅</span>
+                            <div>
+                                <strong>Confiança</strong>
+                                <p>Transparência em todos os serviços e orçamentos.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💡</span>
+                            <div>
+                                <strong>Inovação</strong>
+                                <p>Sempre atualizados com as últimas tendências tecnológicas.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <div>
+                                <strong>Atendimento</strong>
+                                <p>Atendimento personalizado e humanizado para cada cliente.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💰</span>
+                            <div>
+                                <strong>Preço Justo</strong>
+                                <p>Melhores preços sem comprometer a qualidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: CONTATO / ORÇAMENTO -->
+    <section id="contato" class="section contato-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em <span class="highlight">Contato</span></h2>
+                <p>Solicite um orçamento ou tire suas dúvidas. Estamos prontos para atender você!</p>
+            </div>
+
+            <div class="contato-grid">
+                <div class="contato-form-wrapper">
+                    <h3>Solicitar Orçamento</h3>
+                    <form id="contatoForm" class="contato-form">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(XX) 9XXXX-XXXX" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto *</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione o assunto</option>
+                                <option value="orcamento-produto">Orçamento de Produto</option>
+                                <option value="orcamento-servico">Orçamento de Serviço</option>
+                                <option value="manutencao">Manutenção / Reparo</option>
+                                <option value="duvida">Dúvida Geral</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o que você precisa..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                    </form>
+                    <div id="formSuccess" class="form-success" style="display:none;">
+                        <span class="success-icon">✅</span>
+                        <h3>Mensagem enviada com sucesso!</h3>
+                        <p>Entraremos em contato em até 24 horas.</p>
+                    </div>
+                </div>
+
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <strong>Endereço</strong>
+                            <p>Rua Exemplo, 456, Centro<br>Cidade - SC</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <strong>Telefone</strong>
+                            <p>(47) 9XXXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <strong>E-mail</strong>
+                            <p>contato@gdinfo.com.br</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕐</span>
+                        <div>
+                            <strong>Horário de Funcionamento</strong>
+                            <p>Seg a Sex: 9h às 18h<br>Sáb: 9h às 13h</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="Instagram">📷</a>
+                            <a href="#" class="social-icon" title="Facebook">📘</a>
+                            <a href="#" class="social-icon" title="WhatsApp">💬</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">GD<span class="logo-highlight">INFO</span></span>
+                    </div>
+                    <p>Sua loja de eletrônicos e assistência técnica de confiança.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Manutenção de Notebooks</a></li>
+                        <li><a href="#servicos">Reparo de Smartphones</a></li>
+                        <li><a href="#servicos">Montagem de PCs</a></li>
+                        <li><a href="#servicos">Upgrade de Hardware</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GDINFO Eletrônicos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
